@@ -2,11 +2,10 @@
 
 using namespace std;
 
-int SwapNumbers(int A, int B){
+void SwapNumbers(int &A, int &B){
     int temp = A;
     A = B;
     B = temp;
-    return A,B;
 }
 
 int main(){
