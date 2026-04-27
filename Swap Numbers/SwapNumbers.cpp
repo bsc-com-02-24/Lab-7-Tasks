@@ -2,10 +2,10 @@
 
 using namespace std;
 
-void SwapNumbers(int *A, int *B){
-    int temp = *A;
-    *A = *B;
-    *B = temp;
+void SwapNumbers(int& A, int& B){
+    int temp = A;
+    A = B;
+    B = temp;
 }
 
 int main(){
@@ -16,7 +16,7 @@ int main(){
     cout << "varA before swap: " << varA << endl;
     cout << "varB before swap: " << varB << endl;
 
-    SwapNumbers(&varA,&varB);
+    SwapNumbers(varA,varB);
 
     cout<< "varA after swap: " << varA << endl;
     cout << "varB after swap: " << varB << endl;
