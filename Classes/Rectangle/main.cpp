@@ -25,9 +25,8 @@ int main(){
     cout << "\nWidth of the myRectangle: " << myRectangle.getWidth()<<endl;
     cout << "\nArea of the myRectangle: " << myRectangle.calculateArea()<<endl;
 
-    Rectangle otherRectangle;
+    Rectangle otherRectangle(userLength,userWidth);
 
-    otherRectangle(userLength,userWidth);
     cout<<"\nLength of otherRectangle: "<< otherRectangle.getLength()<<endl;
     cout<<"\nLength of otherRectangle: "<< otherRectangle.getWidth()<<endl;
     cout<<"\nArea of otherRectangle: "<< otherRectangle.calculateArea()<<endl;

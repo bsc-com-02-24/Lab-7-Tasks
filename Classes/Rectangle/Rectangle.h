@@ -6,13 +6,15 @@ class Rectangle{
     float width;
 
     public:
+
+    //default constructor
     Rectangle(){
         length =0.0;
         width = 0.0;      
     }
 
     //overloaded constructor to initialize length and width
-    Rectangle(float l,float w){
+    Rectangle(float& l,float& w){
         length = l;
         width = w;
     }
